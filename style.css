@@ -105,3 +105,8 @@ body {
     rotate: -45deg;
     transform: translateY(3px);
 }
+
+
+.freeze{
+    pointer-events: none;
+}
