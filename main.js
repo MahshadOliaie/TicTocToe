@@ -4,6 +4,7 @@ let counter = 9;
 console.log(boxes)
 let lineDir = document.querySelectorAll(".lineDir");
 let linesContainer= document.querySelector(".lines")
+let theme =document.querySelector(".mode");
 
 let lines =document.querySelectorAll(".line");
 for (const line of lines) {
@@ -66,11 +67,21 @@ function chooseBox() {
 }
 
 
+function mode(){
+    document.body.classList.toggle("light");
+}
+
+
+
+
+
+
 
 for (const box of boxes) {
     box.addEventListener("click", chooseBox);
 }
 
+theme.addEventListener("click", mode);
 
 
 

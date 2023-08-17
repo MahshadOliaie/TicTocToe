@@ -75,12 +75,12 @@ body {
 
 }
 
-.shape{
+.shape {
     width: 100%;
     height: 100%;
 }
 
-.O{
+.O {
     width: 70%;
     height: 70%;
     border: 5px solid rgba(255, 255, 255, 0.627);
@@ -89,7 +89,7 @@ body {
 }
 
 
-.X::after{
+.X::after {
     content: "";
     width: 5px;
     height: 100%;
@@ -98,75 +98,198 @@ body {
     rotate: 45deg;
     transform: translateY(3px);
 }
-.X::before{
+
+.X::before {
     content: "";
     width: 5px;
     height: 100%;
-    background-color:  rgba(222, 205, 118, 0.83);
+    background-color: rgba(222, 205, 118, 0.83);
     box-shadow: 1px 1px 1rem rgb(255, 235, 136);
     rotate: -45deg;
     transform: translateY(3px);
 }
 
 
-.freeze{
+.freeze {
     pointer-events: none;
 }
 
 
 
 
-.lines , .horizontal ,.vertical , .diagonal{
+.lines,
+.horizontal,
+.vertical,
+.diagonal {
     height: 710px;
     width: 710px;
     position: absolute;
     justify-content: space-around;
 }
-.lines{
-    display: none;
-}
 
-.lines{
+
+.lines {
     translate: 5px 5px;
+    display: none;
 
 }
 
-.horizontal .line{
-    width: 90%;
+.horizontal .line {
+    width: 0;
     height: 5px;
-    background-color: red;
+    background-color: rgb(255, 66, 66);
+    box-shadow: 1px 1px 1rem red;
+    animation: horizontalLine 500ms forwards;
 }
-.horizontal{
+
+.horizontal {
     flex-direction: column;
 }
-.vertical .line , .diagonal .line{
+
+.vertical .line,
+.diagonal .line {
     width: 5px;
-    height: 90%;
-    background-color: red;
-    
+    height: 0;
+    background-color: rgb(255, 66, 66);
+    box-shadow: 1px 1px 1rem red;
+    animation: verticalLine 500ms forwards;
 }
 
-.diagonal .line{
-    height: 120%;
+.diagonal .line {
+    animation: diagonalLine 500ms forwards;
 }
 
-.seven{
+.seven {
     transform: rotate(45deg);
     translate: 176px;
 
 }
 
-.eight{
+.eight {
     transform: rotate(-45deg);
     translate: -176px;
 }
 
 
-.hide{
+.hide {
     opacity: 0;
 }
 
-.show{
+.show {
     display: flex;
 }
 
+@keyframes horizontalLine {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 90%;
+    }
+
+}
+
+@keyframes verticalLine {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 90%;
+    }
+
+}
+
+@keyframes diagonalLine {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 120%;
+    }
+}
+
+
+
+
+
+.light {
+    background-image: url(./lightbg.gif);
+}
+
+.light .box {
+    background-color: aliceblue;
+}
+
+.light .O {
+    border-color: rgb(77, 77, 77);
+    box-shadow: 1px 1px 1rem rgb(0, 0, 0)
+}
+
+.light .X::after {
+    background-color: rgba(231, 98, 98, 0.83);
+    box-shadow: 1px 1px 1rem rgb(255, 2, 2);
+}
+
+.light .X::before {
+    background-color: rgba(231, 98, 98, 0.83);
+    box-shadow: 1px 1px 1rem rgb(255, 2, 2);
+}
+
+
+
+.toggle {
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    background-image: url(./meSbNaU.jpg);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 1px 1px 3rem white;
+}
+
+.mode {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgb(207, 207, 207);
+    animation: todarkmode 500ms forwards;
+}
+
+
+.light .toggle {
+    background-image: url(./morning-cloudy-sky.jpg);
+    box-shadow: 1px 1px 3rem black;
+}
+
+.light .mode {
+    background-color: rgb(255, 191, 0);
+    animation: tolightmode 500ms forwards;
+}
+
+@keyframes tolightmode {
+    from {
+        translate: 4px;
+    }
+
+    to {
+        translate: 63px;
+    }
+}
+
+@keyframes todarkmode {
+    from {
+        translate: 60px;
+    }
+
+    to {
+        translate: 4px;
+    }
+}
