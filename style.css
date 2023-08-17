@@ -266,14 +266,17 @@ body {
 
 .light .toggle {
     background-image: url(./morning-cloudy-sky.jpg);
-    box-shadow: 1px 1px 3rem black;
+    box-shadow: 1px 1px 3rem rgb(63, 63, 63);
 }
 
 .light .mode {
     background-color: rgb(255, 191, 0);
     animation: tolightmode 500ms forwards;
 }
-
+.light .turn{
+    background-color: rgba(215, 215, 215, 0.434);
+    color: rgb(0, 0, 0);
+}
 @keyframes tolightmode {
     from {
         translate: 4px;
@@ -292,4 +295,26 @@ body {
     to {
         translate: 4px;
     }
+}
+
+
+.turn{
+    width: 150px;
+    height: 60px;
+    background-color: rgba(42, 42, 42, 0.434);
+    justify-content: space-evenly;
+    color: white;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 30px;
+    border-radius: 50px;
+}
+
+.Oturn .fa-o , .Xturn .fa-x{
+    font-size: 40px;
+    text-shadow: 1px 1px 1rem red;
+}
+.Oturn .fa-x ,.Xturn .fa-o{
+    color: gray;
 }

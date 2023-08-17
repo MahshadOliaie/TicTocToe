@@ -1,7 +1,6 @@
 
 let boxes = document.querySelectorAll(".shape");
 let counter = 9;
-console.log(boxes)
 let lineDir = document.querySelectorAll(".lineDir");
 let linesContainer= document.querySelector(".lines")
 let theme =document.querySelector(".mode");
@@ -14,6 +13,7 @@ for (const line of lines) {
 
 
 function chooseBox() {
+
     if (counter % 2 !== 0) {
         this.classList.add("O");
     }
@@ -64,6 +64,21 @@ function chooseBox() {
         }
     }
     counter--;
+
+
+
+    if(counter % 2 !== 0){
+        document.querySelector(".turn").classList.remove("Xturn");
+        document.querySelector(".turn").classList.add("Oturn");
+    }
+    else{
+        document.querySelector(".turn").classList.remove("Oturn");
+        document.querySelector(".turn").classList.add("Xturn");
+    }
+
+    if(counter===0){
+        document.querySelector(".turn").classList.remove("Oturn","Xturn");
+    }
 }
 
 
