@@ -278,6 +278,9 @@ body {
     background-color: rgba(215, 215, 215, 0.434);
     color: rgb(0, 0, 0);
 }
+.light .drawResult{
+    text-shadow: 1px 1px 1rem black;
+}
 
 .light .resault{
     color: black;
@@ -334,6 +337,11 @@ body {
     right: 50px;
     font-size: 30px;
     border-radius: 50px;
+    flex-wrap: wrap;
+}
+
+.turn i{
+    margin-top: 10px;
 }
 
 .Oturn .fa-o , .Xturn .fa-x{
@@ -344,6 +352,21 @@ body {
     color: gray;
 }
 
+.draw{
+    margin: 0;
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 15px;
+    transform: scale(.1);
+    opacity: 0;
+    font-weight: 600;
+}
+.drawResult{
+    opacity: 1;
+    transform: scale(1);
+    transition: 300ms;
+    text-shadow: 1px 1px 1rem white;
+}
 
 
 
@@ -427,3 +450,4 @@ a{
     background-color: rgba(132, 132, 132, 0.865);
     transition: 300ms;
 }
+

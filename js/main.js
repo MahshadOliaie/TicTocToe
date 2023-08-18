@@ -86,6 +86,8 @@ function whooseTurn() {
 
     if (counter === 0) {
         turn.classList.remove("Oturn", "Xturn");
+        document.querySelector(".draw").classList.add("drawResult");
+        document.querySelector(".turn").style.background="none";
     }
 }
 
