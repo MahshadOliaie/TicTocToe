@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./domNodes.js" defer></script>
+    <script src="./main.js" defer></script>
+    <script src="./multiplayer.js" defer></script>
+</head>
+
+<body class="dflex">
+    <div class="player">
+        <a href="./singleplayer.html" class="singleplayer dflex">Single Player</a>
+        <div class="multiplayer dflex">MultiPlayer</div>
+    </div>
+    <div class="toggle">
+        <div class="mode"></div>
+    </div>
+    <i class="fa-solid fa-rotate" id="restart"></i>
+    <div class="turn dflex Oturn">
+        <i class="fa-solid fa-o"></i>
+        <i class="fa-solid fa-x"></i>
+    </div>
+    <div class="resault dnone">
+        <i class="fa-solid fa-o"></i>
+        <img src="./winnerLight.png" alt="winner" class="winnerLight">
+        <img src="./winnerDark.png" alt="winner" class="winnerDark">
+    </div>
+    <div class="container">
+        <div class="box dflex">
+            <div class="shape dflex"></div>
+        </div>
+        <div class="box dflex">
+            <div class="shape dflex"></div>
+        </div>
+        <div class="box dflex">
+            <div class="shape dflex"></div>
+        </div>
+        <div class="box dflex">
+            <div class="shape dflex"></div>
+        </div>
+        <div class="box dflex">
+            <div class="shape dflex"></div>
+        </div>
+        <div class="box dflex">
+            <div class="shape dflex"></div>
+        </div>
+        <div class="box dflex">
+            <div class="shape dflex"></div>
+        </div>
+        <div class="box dflex">
+            <div class="shape dflex"></div>
+        </div>
+        <div class="box dflex">
+            <div class="shape dflex"></div>
+        </div>
+    </div>
+
+
+    <div class="lines dflex">
+        <div class="horizontal dflex lineDir">
+            <div class="line one"></div>
+            <div class="line two"></div>
+            <div class="line three"></div>
+        </div>
+        <div class="vertical dflex lineDir">
+            <div class="line four"></div>
+            <div class="line five"></div>
+            <div class="line six"></div>
+        </div>
+
+        <div class="diagonal dflex lineDir">
+            <div class="line seven"></div>
+            <div class="line eight"></div>
+        </div>
+    </div>
+</body>
+
+</html>
