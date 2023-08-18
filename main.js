@@ -5,6 +5,7 @@ let lineDir = document.querySelectorAll(".lineDir");
 let linesContainer= document.querySelector(".lines")
 let theme =document.querySelector(".mode");
 let turn = document.querySelector(".turn");
+let restart = document.getElementById("restart");
 
 let lines =document.querySelectorAll(".line");
 for (const line of lines) {
@@ -124,5 +125,8 @@ for (const box of boxes) {
 
 theme.addEventListener("click", mode);
 
+restart.addEventListener("click", function () {
+    window.location.reload(true);
+})
 
 
