@@ -16,6 +16,7 @@
 
 .singleplayer{
     width: 110px;
+    font-size: 16px;
     background-color: rgba(243, 211, 211, 0.661);
     box-shadow: 1px 1px 1rem rgb(197, 3, 3);
 }
