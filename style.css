@@ -179,6 +179,7 @@ body {
     display: flex;
 }
 
+
 @keyframes horizontalLine {
     from {
         width: 0;
@@ -277,6 +278,18 @@ body {
     background-color: rgba(215, 215, 215, 0.434);
     color: rgb(0, 0, 0);
 }
+
+.light .resault{
+    color: black;
+    text-shadow: 1px 1px 1rem black;
+}
+.light .winnerLight{
+    display: none;
+}
+.light .winnerDark{
+    display: block;
+}
+
 @keyframes tolightmode {
     from {
         translate: 4px;
@@ -317,4 +330,36 @@ body {
 }
 .Oturn .fa-x ,.Xturn .fa-o{
     color: gray;
+}
+
+
+
+
+
+.resault{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    font-size: 50px;
+    color: white;
+    text-shadow: 1px 1px 1rem white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.resault img{
+    width: 110%;
+}
+.winnerDark{
+    display: none;
+}
+
+
+
+.dnone{
+    display: none;
 }
