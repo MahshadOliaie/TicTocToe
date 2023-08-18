@@ -293,6 +293,14 @@ body {
     color: black;
     text-shadow: 1px 1px 1rem black;
 }
+.light .singleplayer , .light .multiplayer{
+    background-color: rgba(94, 94, 94, 0.331);
+    color: white;
+}
+.light .multiplayer{
+    background-color: rgba(51, 3, 66, 0.331);
+    box-shadow: 1px 1px 1rem rgb(212, 0, 255);
+}
 
 @keyframes tolightmode {
     from {
@@ -383,4 +391,34 @@ body {
 #restart:hover{
     font-size: 35px;
     transition: 300ms;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+.player{
+    position: absolute;
+    left: 0;
+}
+.singleplayer , .multiplayer{
+    width: 110px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    height: 50px;
+    padding: 5px 20px;
+    margin: 15px 0;
+    background-color: rgba(132, 132, 132, 0.661);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.multiplayer{
+    background-color: rgba(243, 211, 211, 0.661);
+    box-shadow: 1px 1px 1rem rgb(197, 3, 3);
+}
+.singleplayer{
+    width: 95px;
+    font-size: 13px;
 }
