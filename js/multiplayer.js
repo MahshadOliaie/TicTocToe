@@ -16,18 +16,17 @@ function chooseBox() {
 
     counter--;
 
-
     whooseTurn();
 
 
 }
 
 
-
-
 for (const box of boxes) {
     box.addEventListener("click", chooseBox);
 }
+
+
 
 
 

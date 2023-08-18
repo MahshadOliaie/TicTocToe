@@ -16,6 +16,8 @@ function chooseBox() {
     }
 }
 
+
+
 function systemTurn() {
     let empty = [...document.querySelectorAll(".shape:not(.freeze)")];
     let random = Math.floor(Math.random() * empty.length);
@@ -26,8 +28,6 @@ function systemTurn() {
     counter--;
     whooseTurn();
 }
-
-
 
 for (const box of boxes) {
     box.addEventListener("click", chooseBox);

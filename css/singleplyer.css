@@ -5,6 +5,9 @@
     background-color: rgba(51, 3, 66, 0.331);
     box-shadow: 1px 1px 1rem rgb(212, 0, 255);
 }
+.light .singleplayer:hover{
+    background-color: rgba(51, 3, 66, 0.331);
+}
 .light .multiplayer{
     background-color: rgba(94, 94, 94, 0.331);
     box-shadow: none;
@@ -16,9 +19,17 @@
     background-color: rgba(243, 211, 211, 0.661);
     box-shadow: 1px 1px 1rem rgb(197, 3, 3);
 }
+.singleplayer:hover{
+    background-color: rgba(243, 211, 211, 0.661);
+}
 .multiplayer{
     background-color: rgba(132, 132, 132, 0.661);
     width: 95px;
     font-size: 13px;
     box-shadow: none;
+    transition: 300ms;
+}
+.multiplayer:hover{
+    background-color: rgba(132, 132, 132, 0.82);
+    transition: 300ms;
 }
